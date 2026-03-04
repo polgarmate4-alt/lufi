@@ -83,15 +83,27 @@ footer{
     background-color: #f7cac9;
     padding:40px;
     text-align: justify;  /*sorkizártan igazít*/
+    background-image: linear-gradient(rgba(255, 46, 46, 0.5), rgba(255, 255, 255, 0.5)), url('./bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
 
 }
 
 .jobb_oldal{
-    background-color: #a7edf7;
+    
     display: flex;
     flex-direction: column; /*Egymás alá rendezi a diveket*/
     gap: 20px;
     text-align:center;
+  
 
 }
 
@@ -101,18 +113,31 @@ footer{
     gap:20px;
     background-color: #ffffff;
     margin-top:40px;
+    margin: 40px 0px;
 }
 
 .welcome-box .welcome-about{
-    background-color: #8cd0fe;
+    background-color: #51abe7;
     flex:1; /*Egyenlő arányban osztja szét a rendelkezésre álló helyet*/
-    
+}
+
+.welcome-box{
+border-radius: 0px 60px 0px 60px;
+box-shadow:inset 2px 2px 10px rgba(0,0,00.2)
+
+}
+.about-box{
+border-radius: 60px 0px 60px 0px ;
+
 }
 
 .content-box{
-    background-color: #d3eafc;
-    padding: 10px;
+    background-color: #bbe2ff;
+    padding: 20px;
     flex:1;
+    text-align: justify;
+    box-shadow:inset 2px 2px 10px rgba(0,0,00.2)
+    
 }
 
 .termekek{
@@ -141,4 +166,31 @@ background-color: #e0e0e0;
 .termekek-felirat{
 font-weight: bold;
 color: #ff9a3c;
+}
+
+main{
+padding: 40px 20px;
+
+
+
+}
+
+.jobb_doboz{
+    background-color: #93f5f0;
+    padding: 20px;
+    flex-grow: 1;
+    box-shadow: 10px 10px 20px 0px rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+
+.gomb{background-color: #ff9a3c;
+color: white;
+text-decoration: none;
+display: inline-block;
+padding: 10px 20px;
+margin-top:  15px;
+border-radius: 10px;
+
+
 }
